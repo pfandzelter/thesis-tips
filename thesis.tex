@@ -57,17 +57,17 @@ There are two things we specifically will not go into:
 First, this article will not cover the regulatory aspects of writing a thesis at TUB, including time limits, how to submit the thesis, etc.
 These things change all the time and it does not make sense to just repeat information that you can find in the \emph{AllgStuPO} and your respective \emph{StuPO} anyway.
 Instead, go and read the \emph{AllgStuPO} and \emph{StuPO} now if you have not yet.
-Even if you have, it can not hurt to do so again as a refresher.
+Even if you have, it cannot hurt to do so again as a refresher.
 Second, we will not go into detail on tooling to write your thesis.
-I will just say that you should use \emph{(La)TeX} and not Word.
+We will just say that you should use \emph{(La)TeX} and not Word.
 As a computer science (or related field) student, you should not be intimidated by a command line and text editor.
-Our thesis template~\cite{thesis-template} should help you get started.
+Our thesis template~\cite{thesis-template} can help you get started.
 
 \section{What is a Thesis?}
 \label{sec:what}
 
 Before we discuss \emph{how} you write your thesis, we should first understand \emph{what} a thesis actually is.
-I mentioned that a thesis is research work that you complete on your own.
+We mentioned that a thesis is research work that you complete on your own.
 Obviously, that is different to \emph{courses}, where you attend a series of lectures to learn about a topic and then write an exam at the end.
 It is also completely different from most \emph{projects} that you do:
 In a project, you typically solve an \emph{engineering problem}, i.e., you get a task and then work in a team (or on your own) to develop software that solves that problem.
@@ -91,6 +91,8 @@ At the core of a research problem there is usually a \emph{research question}.
 This research question can have different \emph{interrogative words} that will dictate the direction of your thesis:
 If it starts with \emph{Why} or \emph{What}, you usually want to investigate a certain phenomenon (e.g., \emph{Why is the gcc compiler so slow when I compile the Linux kernel?} or \emph{What is the overhead of compiling the Linux kernel in a virtual environment?}).
 On the other hand, if your question starts with \emph{How}, the focus is more on developing something new (e.g., \emph{How can we decrease the compile time of the Linux kernel?}).
+Note that there can be a bit of overlap regardless.
+In our example, before you start developing something new, you should measure what currently does not work, and after you measure something, it can be useful to provide some proposals on what to change to make it more performant.
 
 \section{Finding a Topic}
 \label{sec:topic}
@@ -103,8 +105,8 @@ They might, e.g., have an ongoing research project that you can contribute with.
 
 To find an advisor, consider the research groups where you have done some specialization and, e.g., have successfully completed a module.
 Check the profiles of the different members of the group and see if there is someone whose research area matches your preferences.
-When you write them, it is important to make clear what your research interests are and ideally, optionally already think about an interesting topic. 
-If you have already identified a relevant topic or generally have an interesting topic in mind, your chances of finding a supervisor will increase because it shows that you have already dealt with this field. 
+When you write them, it is important to make clear what your research interests are and ideally, optionally already think about an interesting topic.
+If you have already identified a relevant topic or generally have an interesting topic in mind, your chances of finding a supervisor will increase because it shows that you have already dealt with this field.
 
 \section{Writing an Expos\'e}
 \label{sec:expose}
@@ -142,14 +144,14 @@ The goal of this process is to have you and your advisor have a common understan
 This requires discussion about different perspectives, so do not worry if it takes a few days.
 However, the time between iterations is entirely up to you.
 
-What is stated in the Expose is not a fixed list of requirements and tasks. 
-If you realize during your thesis that, e.g., the evaluation method proposed in the expose is not suitable after all, then you can and must choose another suitable method. 
+What is stated in the expos\'e is not a fixed list of requirements and tasks.
+If you realize during your thesis that, e.g., the evaluation method proposed in the expos\'e is not suitable after all, then you can and must choose another suitable method.
 
 \section{Structuring your Thesis}
 \label{sec:structure}
 
 In this section, we would like to cover two things, namely (1) how you should structure your time and tasks when working on your thesis, (2) and how the manuscript itself should be structured.
-We will cover both things together since the approach is identical -- the best way to write your thesis is start at the beginning and finish at the end.
+We will cover both things together since the approach is identical -- the best way to write your thesis is starting at the beginning and finishing at the end.
 Of course, that is not the entire story: During your research, you will uncover new knowledge and will have to re-write earlier parts of your manuscript, or you need to restructure some paragraphs.
 But the basic idea of working from start to finish remains.
 And what if we told you that you have already begun?
@@ -162,17 +164,17 @@ That is because the introduction basically mirrors your expos\'e.
 It is supposed to give your reader an idea of what they can expect in your these, and it helps to set the scene for the text.
 
 You should adapt the text of your expos\'e a bit instead of copying it directly.
-For example, you will now need to add references to your claims and to expand the reasoning in more detail
-It is also common to add a list of contributions, similarly to what we have done in Section~\ref{sec:introduction}.
+For example, you will now need to add references to your claims and to expand the reasoning in more detail.
+It is also common to add a list of contributions, i.e., bullet points on what you contribute to the research area, similarly to what we have done in Section~\ref{sec:introduction}.
 
 \subsection{Background}
 
 The next part of your research (and thesis manuscript) is the dreaded background.
-At this point, you should have done some initial research using \cite{gscholar}, read some papers, looked at some existing work in the field.
-Now, you should double down and fully understand (or at least be aware) the state-of-the-art in your research area.
+At this point, you should have done some initial research, e.g., using \emph{Google Scholar}~\cite{gscholar}, read some papers, looked at some existing work in the field.
+Now, you should double down and fully understand (or at least be aware of) the state-of-the-art in your research area.
 Follow the citation trail (e.g., by reading the papers cited by the papers you have read, reading the papers cited by that, etc.) until you get back to where you started.
-However, be smart with your time and do not spend too much on one obscure paper -- the citation count is usually a good indicator on how a paper has aged (more on selecting the right resources in Section~\ref{sec:faq}).
-As an addition, make sure to keep some papers for your related work section (see Section~\ref{subsec:relatedwork})
+However, be smart with your time and do not spend too much on one obscure paper -- the citation count is usually a good indicator on how well a paper has aged (more on selecting the right resources in Section~\ref{sec:research}).
+As an addition, make sure to keep some papers for your related work section (see Section~\ref{subsec:relatedwork}).
 
 In a research paper, the background section normally serves two tasks:
 First, it introduces the terminology and definitions you use in the rest of your paper.
@@ -181,7 +183,7 @@ This is your opportunity to set the record straight, ideally using some cites.
 Second, the background section lets you introduce the concepts you use in the rest of your paper.
 Every non-trivial piece of information should be mentioned here.
 It can be hard to decide what is considered trivial vs.~non-trivial.
-Think about who reads your paper (e.g., your advisor) and try not to give too much information as that would make your paper boring\footnote{We will cover some further information on Dos and Don'ts of writing in Section~\ref{sec:writing}}.
+Think about who reads your paper (e.g., your advisor) and try not to give too much information as that would make your paper boring.\footnote{We will cover some further information on Dos and Don'ts of writing in Section~\ref{sec:writing}}
 As a rule of thumb, everything that you learned in compulsory lectures can be considered common knowledge in your field.
 
 A background section in a thesis also serves another, indirect task:
@@ -243,7 +245,7 @@ Keep in mind that benchmarks are only meaningful when comparing to something tha
 Include an overview of how you implemented your system but do not go into too much detail when it is not necessary.
 
 \paragraph{Formal Proof}
-You can include a formal proof for your approach if that is the best way to show its correctness.
+You can also include a formal proof for your approach if that is the best way to show its correctness.
 
 In all cases, make sure to introduce your study design explicitly at the beginning.
 For simulations and benchmarks, be smart about what and how you measure:
@@ -255,13 +257,13 @@ Not every research paper includes an explicit discussion section, but having a d
 A discussion is \emph{not} an explanation of your results -- this should be part of your evaluation.
 Instead, a discussion critically evaluates your approach and evaluation.
 Most things we do in computer science are not perfect:
-There will be edge cases, limitations and or scenarios where other approaches are better.
+There will be edge cases, limitations, or scenarios where other approaches are better.
 This section is your opportunity to acknowledge the weaknesses of your thesis and discuss why or why not they matter.
 
 You might be asking yourself:
 ``Why would I talk about things that do not work?!''
 Because if you do not, your examiner will.
-You have a unique opportunity to anticipate the comments that your examiner (or a peer reviewer) might make about your approach.
+You have a unique opportunity to anticipate the comments that your examiner (or a peer reviewer in case of a research paper) might make about your approach.
 This shows that you are fully aware of these limitations and edge cases, and it lets you weaken the impact of those kinds of comments.
 Being able to look at your own work critically is also a testament to your scientific abilities.
 Remember that the goal of a research project is not to sell something but to advance your field of research.
@@ -283,11 +285,11 @@ Mention the paper explicitly (e.g., ``Doe et al.~[10] do this and that...''), an
 Then, explain why this is good or bad.
 Sometimes, multiple papers have a categorically different approach (e.g., centralized vs.~decentralized) than yours.
 In that case, group those papers and explain the advantages and disadvantages using an example.
-Remember that all of these approaches do actually have advantages -- otherwise, they would not exist\footnote{Unless you iterate on them, in which case you should also explicitly mention the similarities}.
+Remember that all of these approaches do actually have advantages -- otherwise, they would not exist.\footnote{Unless you iterate on them, in which case you should also explicitly mention the similarities.}
 
 Some students find it difficult to write this section, and we sometimes read theses that only have a few sentences here, mentioning no more than two or three papers.
 Often, that means that these students have not done their research properly.
-If you can not find anything that answers your research question specifically, broaden your search area.
+If you cannot find anything that answers your research question specifically, broaden your search area.
 Maybe there is a paper that asks your research question and does not provide a solution.
 Maybe a similar research problem is also posed in a different field.
 Possibly, some papers you mention in your background section belong here instead or as well.
@@ -336,12 +338,12 @@ As your thesis will not be published as-is, there is no reason to include it any
 
 Having the right approach to research is one of the most important parts of writing a good thesis.
 The reader should get the feeling that you know what you are talking about, have a full understanding of your research area, and can critically review research papers and articles before you reach a conclusion.
-We can not teach you how to conduct your research here (this is a skill you should have honed in your studies), but we want to give you some tips and guidelines.
+We cannot teach you how to conduct your research here (this is a skill you should have honed in your studies), but we want to give you some tips and guidelines.
 
 First, we want to emphasize the result of the distinction between engineering and research problems on how you handle your research.
 In an engineering documentation or other project report, you will feel inclined to \emph{defend} what you have done, e.g., you might try to find a study that shows the downsides of a decentralized approach to defend that you have come up with a centralized approach.
 That makes sense when you want to sell something, but an important pillar of science is \emph{transparency}.
-To clearly show what your idea can and can not do, give a holistic overview of state-of-the-art research, including competing ideas.
+To clearly show what your idea can and cannot do, give a holistic overview of state-of-the-art research, including competing ideas.
 In most cases, it is best to finish your research before you begin developing your idea.
 Of course, it might be necessary to go looking into certain aspects a bit deeper once you have some experience developing your idea; then, however, do not be afraid to rethink aspects of your work when you learn more.
 
@@ -352,7 +354,7 @@ Before you read a text, try to answer a few questions:
 Officially published texts, such as conference papers and journal articles, will receive a ``peer-review'', where other researchers in the field give feedback on the text and decide whether it meets certain scientific standards.
 To find out whether a text has been peer-reviewed, see if it is published in a proper journal or conference proceedings.
 Preprints of papers and articles are sometimes uploaded to servers such as arXiv~\cite{arxiv} before they go through peer-review to have them available earlier -- when you encounter a preprint, check who uploaded it and whether a published version exists.
-If you find a published version in the \emph{ACM} or \emph{IEEE} library but cannot access it, try to find the ``institutional login'' and use you TUB account to download the paper. 
+If you find a published version in the \emph{ACM} or \emph{IEEE} library but cannot access it, try to find the ``institutional login'' and use you TUB account to download the paper.
 Some texts, such as industry white papers, blog posts, websites, and software documentation, do not go through peer-review.
 Use these texts only as additional references when absolutely required and try to find peer-reviewed alternatives.
 
@@ -396,7 +398,7 @@ If you plan to write your master's thesis or want to improve your English writin
 There is no argument against this.
 Spell-checkers exist, they are free to use, they are available on any platform.
 Trust them to do their job correctly, they know the English language better than you do.
-We recommend~\cite{ltex},~\cite{textidote} for LaTeX and VS Code, but you may choose a different one based on your preferences.
+Depending on the platform, we recommend ~\cite{ltex} and~\cite{textidote}, but you may choose a different one based on your preferences.
 
 \paragraph{\textit{Use a spell-checker}}
 We are not sure if you have heard us the first time.
@@ -440,7 +442,7 @@ Pretty please.
 \section{Further Reading}
 \label{sec:resources}
 
-We can not cover everything in this article, so we do want to draw your attention to a few further resources.
+We cannot cover everything in this article, so we do want to draw your attention to a few further resources.
 In a blog post~\cite{leitner}, Philipp Leitner gives some valuable tips for writing a software engineering thesis.
 Simon Peyton Jones of Microsoft Research shares some valuable insights into writing technical papers~\cite{jones-paper} and giving research talks~\cite{jones-talk}.
 You can find additional writing tips in~\cite{patterson-writing,ernst-writing,schulzrinne-writing}.
@@ -450,7 +452,7 @@ You can find additional writing tips in~\cite{patterson-writing,ernst-writing,sc
 
 Writing a computer science thesis is hard, especially when you do it the first time.
 Having some research experience from seminars can help, but there are a lot of firsts for each student.
-I hope that this text gives you some structure for your upcoming thesis and that the tips and hints help you along the way.
+We hope that this text gives you some structure for your upcoming thesis and that the tips and hints help you along the way.
 
 \printbibliography
 
