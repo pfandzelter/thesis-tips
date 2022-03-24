@@ -410,7 +410,7 @@ There can always be mistakes in a paper, or things that the authors cannot know 
 Conversely, even if you have answered ``No'' to one of the questions above, you might still have a good paper in front of you (which is very unlikely though).
 Do keep an open mind when you read any text you encounter.
 
-\section{Writing Advice}
+\section{Writing/Presentation Advice}
 \label{sec:writing}
 
 Finally, here is a non-exhaustive list of writing tips for your thesis.
@@ -422,7 +422,7 @@ If you plan to write your master's thesis or want to improve your English writin
 There is no argument against this.
 Spell-checkers exist, they are free to use, they are available on any platform.
 Trust them to do their job correctly, they know the English language better than you do.
-Depending on the platform, we recommend ~\cite{ltex} and~\cite{textidote}, but you may choose a different one based on your preferences.
+Depending on the platform, we recommend \emph{ltex}~\cite{ltex} and \emph{textidote}~\cite{textidote}, but you may choose a different one based on your preferences.
 
 \paragraph{\textit{Use a spell-checker}}
 We are not sure if you have heard us the first time.
@@ -479,6 +479,60 @@ Note that any plagiarization attempt will be reported as such.
 \paragraph{Please use a spell-checker}
 Please.
 Pretty please.
+
+\paragraph{Presenting Concepts Visually}
+
+Any piece of technical or academic writing can benefit greatly from putting concepts into pictures.
+As they say, ``one picture is worth a thousand words''.
+Most concepts can be visualized as diagrams of lines and boxes, making it easier for your reader to understand the relationships and roles of individual components.
+Keep the amount of diagrams to a sensible degree and use references in your text and figure captions to explain what can be seen in those diagrams.
+Do not put too many concepts in those diagrams, however: try to limit yourself to overviews and create a new figure for more detailed explanations that may be required.
+
+There are a number of tools out there that you can use to visualize your concepts.
+In our group, we mostly use MS PowerPoint for the figures in our paper.
+It is easy to use, you can export figures as vector graphics, e.g., as a PDF, so they are easy on the eyes and great to view digitally, and you can even reuse them in your presentations.
+Be sure to keep a consistent visual style and employ colors only when necessary to get a specific concept across.
+
+You may also want to use diagrams from other work, such as from papers or presentations.
+Instead of screenshotting those diagrams, we highly suggest recreating them with your personal visual style and in higher quality.
+That helps keeping things consistent in your thesis and high-quality.
+Nevertheless, you must absolutely cite those figures!
+
+\paragraph{Presenting Data (Charts)}
+
+Besides presenting concepts, such as a system's architecture, you will probably also need to present some data, such as results from a simulation.
+Here, employing visual tools is of even greater importance.
+You should use charts for the key results of your work.
+
+Most charts show the relationship between a number of variables and a value, such as a measurement or observation.
+The relationship you want to illustrate determines the kind of chart you should use.
+Variables are the things that you yourself set, and they can basically be of three different types:
+
+\begin{itemize}
+    \item A \emph{numerical} variable is basically a number. It has an order and covers a range of possible values. This could be the experiment time, or an increasing workload.
+    \item A \emph{categorical} variable is one that can have values of a specific category. Think of varying the cloud platform you test, the different providers are values of the same variable. There is no inherent order in those values.
+\end{itemize}
+
+In almost all cases, your output variable will also be numeric.
+If you find yourself in the situation that your categorical variable has only one value, it is not a variable and your plot will not show anything meaningful.
+
+You will typically want to start with a two-dimensional chart.
+As it has two dimensions, you can only show one variable (the first dimension) and one output value (the second dimension).
+The input should be on the horizontal X-axis and the output should be on the vertical Y-axis.
+If your goal is to show the relationship between a numerical input and numerical output, you should use a \emph{scatter plot} where you draw points for your individual measurements.
+If you want to show the relationship between a categorical variable and a numerical output, use a \emph{bar chart}, \emph{box plot}, or \emph{violin plot}, depending on what you want to show.
+
+Choose your first input dimension wisely, as it is the most important.
+Instinctively, many people will use time as this dimension, but this does not always make sense, especially when the effects you observe to not change over time.
+Instead, please also consider plotting the \emph{empirical distribution function} of your data as it can be more meaningful to show many data points.
+You can then also add additional input dimension with colors and line or point styles -- use categorical colors for categorical values and color gradients for numerical ones.
+
+Of course, the key elements from Section~\ref{sec:diagrams} about diagrams apply here as well:
+Keep a consistent visual style, create high quality figures, use colors only when needed to get a point across, and explain everything you see in the charts in your main text and/or figure captions.
+We mainly use the Python package \emph{seaborn}~\cite{seaborn} to create graphs.
+In combination with the data analysis functionality of \emph{pandas}~\cite{pandas}, you can create some great charts and dig deep into your data.
+You can even do this interactively in a \emph{Jupyter} notebook~\cite{jupyter}!
+As a computer science (or related subject) student, you should have all the knowledge you need to learn using those tools.
 
 \section{Further Reading}
 \label{sec:resources}
