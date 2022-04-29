@@ -3,7 +3,12 @@
 > I think you have created a fantastic guide that will help a lot of students.
 > It gives a great overview of the work (and motivation for the thesis) and provides many useful tips. 👍
 
--- Anonymous Student
+-- Anonymous Student (Bachelor)
+
+> I think these tips are really good! Best of all, they give a good overview of the expectations of the thesis.
+> In my Bachelor's thesis, I found it hart to estimate what the expectations would be.
+
+-- Other Anonymous Student (Master)
 
 Writing a computer science thesis is a considerable challenge for students.
 In this text, we give some tips and structure to write a great thesis.
