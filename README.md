@@ -6,7 +6,7 @@
 -- Anonymous Student (Bachelor)
 
 > I think these tips are really good! Best of all, they give a good overview of the expectations of the thesis.
-> In my Bachelor's thesis, I found it hart to estimate what the expectations would be.
+> In my Bachelor's thesis, I found it hard to estimate what the expectations would be.
 
 -- Other Anonymous Student (Master)
 
