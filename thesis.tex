@@ -1,17 +1,18 @@
 \documentclass[a4paper]{article}
 
 \usepackage{url}
-% \usepackage{cite}
-% \usepackage{amsmath,amssymb,amsfonts}
-% \usepackage{algorithmic}
-% \usepackage{graphicx}
-% \usepackage{textcomp}
-% \usepackage{xcolor}
 \usepackage[all]{nowidow}
-% \usepackage{multirow}
-% \usepackage{balance}
-% \usepackage[caption=false]{subfig}
+
+\usepackage{xcolor}
+\usepackage[colorlinks=true,colorlinks,
+linkcolor=purple,
+citecolor=purple,
+urlcolor=blue,
+filecolor=blue]{hyperref}
+\usepackage[capitalise]{cleveref}
+
 \usepackage[maxbibnames=99, defernumbers=true, backend=bibtex, citestyle=numeric-comp, url=true, doi=false, isbn=false, giveninits=true, sortcites=true]{biblatex}
+
 \addbibresource{references}
 
 \usepackage{authblk}
@@ -46,20 +47,20 @@ In this article, we will go over some of those experiences and lessons in order 
 Specifically, we will address the following questions:
 
 \begin{itemize}
-    \item What is a thesis? How is it different from a project or seminar? (Section~\ref{sec:what})
-    \item How do I find a topic for my thesis? (Section~\ref{sec:topic})
-    \item How do I write an expos\'e? Why should I even do such a thing? (Section~\ref{sec:expose})
-    \item How do I structure working on my thesis? (Section~\ref{sec:structure})
+    \item What is a thesis? How is it different from a project or seminar? (\cref{sec:what})
+    \item How do I find a topic for my thesis? (\cref{sec:topic})
+    \item How do I write an expos\'e? Why should I even do such a thing? (\cref{sec:expose})
+    \item How do I structure working on my thesis? (\cref{sec:structure})
 \end{itemize}
 
-Additionally, we will provide tips on research (Section~\ref{sec:research}) and writing (Section~\ref{sec:writing}) as well as some helpful further resources (Section~\ref{sec:resources}) before concluding in Section~\ref{sec:conclusion}.
+Additionally, we will provide tips on research (\cref{sec:research}) and writing (\cref{sec:writing}) as well as some helpful further resources (\cref{sec:resources}) before concluding in \cref{sec:conclusion}.
 If you are not a computer science student, you might still find some information in this article useful -- just keep in mind that we make some assumptions that might not apply to you.
 
 There are two things we specifically will not go into:
 First, this article will not cover the regulatory aspects of writing a thesis at TUB, including time limits, how to submit the thesis, etc.
 These things change all the time, and it does not make sense to just repeat information that you can find in the \emph{AllgStuPO} and your respective \emph{StuPO} anyway.
 Instead, go and read the \emph{AllgStuPO} and \emph{StuPO} now if you have not yet (even if you have, it cannot hurt to do so again as a refresher).
-Let us just say that you should not plagiarize (see Section~\ref{subsec:plags}).
+Let us just say that you should not plagiarize (see \cref{subsec:plags}).
 Second, we will not go into detail on tooling to write your thesis.
 We will just say that you should use \emph{(La)TeX} and not Word.
 As a computer science (or related field) student, you should not be intimidated by a command line and text editor.
@@ -134,7 +135,7 @@ The second paragraph introduces your research problem.
 Here, try to be as precise as possible to avoid confusion during the work on your thesis.
 Be sure to also include motivation for your question: why is it a problem, for whom is it a problem, and why is it important that someone takes the time to work on this?
 The third to fifth paragraphs should focus on what you actually plan to do in the thesis, it is basically your work plan.
-You can read more about what you \emph{should} do in Section~\ref{sec:structure}, but for now keep in mind the two questions that you should answer in this paragraph:
+You can read more about what you \emph{should} do in \cref{sec:structure}, but for now keep in mind the two questions that you should answer in this paragraph:
 
 \begin{enumerate}
     \item What is the approach that you plan to take to give an answer to the research question?
@@ -168,7 +169,7 @@ It is supposed to give your reader an idea of what they can expect in your these
 
 You should adapt the text of your expos\'e a bit instead of copying it directly.
 For example, you will now need to add references to your claims and to expand the reasoning in more detail.
-It is also common to add a list of contributions, i.e., bullet points on what you contribute to the research area, similarly to what we have done in Section~\ref{sec:introduction}.
+It is also common to add a list of contributions, i.e., bullet points on what you contribute to the research area, similarly to what we have done in \cref{sec:introduction}.
 
 \subsection{Background}
 
@@ -178,8 +179,8 @@ Now, you should double down and fully understand (or at least be aware of) the s
 Follow the citation trail (e.g., by reading the papers cited by the papers you have read, reading the papers cited by that, etc.) until you get back to where you started.
 After a while, you will notice that reading one of those papers keeps adding fewer papers to your have-to-read pile of papers.
 In the end, you will probably have read around 100-120 papers (which you will not all need to discuss and cite in your thesis).
-Generally, be smart with your time and do not spend too much on one obscure paper -- for older papers, the citation count is usually a good indicator on how well a paper has aged (more on selecting the right resources in Section~\ref{sec:research}).
-As an addition, make sure to keep some papers for your related work section (see Section~\ref{subsec:relatedwork}) which discusses alternative approaches to your solution whereas the background section provides the necessary foundations for understanding the rest of the thesis.
+Generally, be smart with your time and do not spend too much on one obscure paper -- for older papers, the citation count is usually a good indicator on how well a paper has aged (more on selecting the right resources in \cref{sec:research}).
+As an addition, make sure to keep some papers for your related work section (see \cref{subsec:relatedwork}) which discusses alternative approaches to your solution whereas the background section provides the necessary foundations for understanding the rest of the thesis.
 
 In a research paper, the background section normally serves two tasks:
 First, it introduces the terminology and definitions you use in the rest of your paper.
@@ -188,7 +189,7 @@ This is your opportunity to set the record straight, ideally using some cites.
 Second, the background section lets you introduce the concepts you will use in the rest of your paper.
 Every non-trivial piece of information should be mentioned here.
 It can be hard to decide what is considered trivial vs.~non-trivial.
-Think about who reads your paper (e.g., your advisor) and try not to give too much information as that would make your paper boring.\footnote{We will cover some further information on Dos and Don'ts of writing in Section~\ref{sec:writing}.}
+Think about who reads your paper (e.g., your advisor) and try not to give too much information as that would make your paper boring.\footnote{We will cover some further information on Dos and Don'ts of writing in \cref{sec:writing}.}
 As a rule of thumb, everything that you learned in compulsory lectures can be considered common knowledge in your field, everything that will be new to most recent master's graduates is non-trivial.
 
 A background section in a thesis also serves another, indirect task:
@@ -527,7 +528,7 @@ Instinctively, many people will use time as this dimension, but this does not al
 Instead, please also consider plotting the \emph{empirical distribution function} of your data as it can be more meaningful to show many data points.
 You can then also add additional input dimension with colors and line or point styles -- use categorical colors for categorical values and color gradients for numerical ones.
 
-Of course, the key elements from Section~\ref{sec:diagrams} about diagrams apply here as well:
+Of course, the key elements from \cref{sec:diagrams} about diagrams apply here as well:
 Keep a consistent visual style, create high quality figures, use colors only when needed to get a point across, and explain everything you see in the charts in your main text and/or figure captions.
 We mainly use the Python package \emph{seaborn}~\cite{seaborn} to create graphs.
 In combination with the data analysis functionality of \emph{pandas}~\cite{pandas}, you can create some great charts and dig deep into your data.
