@@ -12,6 +12,6 @@
 
 Writing a computer science thesis is a considerable challenge for students.
 In this text, we give some tips and structure to write a great thesis.
-We will go over the research process in general, finding a topic, writing an expos\'e, and thesis structure.
+We will go over the research process in general, finding a topic, writing an exposé, and thesis structure.
 At the end, we include some tips on researching and writing.
 See `thesis.pdf` for a PDF version of this guide.
