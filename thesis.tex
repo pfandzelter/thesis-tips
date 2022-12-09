@@ -53,7 +53,7 @@ Specifically, we will address the following questions:
     \item How do I structure working on my thesis? (\cref{sec:structure})
 \end{itemize}
 
-Additionally, we will provide tips on research (\cref{sec:research}) and writing (\cref{sec:writing}) as well as some helpful further resources (\cref{sec:resources}) before concluding in \cref{sec:conclusion}.
+Additionally, we will provide tips on research (\cref{sec:research}), writing (\cref{sec:writing}), and talking (\cref{sec:talk}), as well as some helpful further resources (\cref{sec:resources}) before concluding in \cref{sec:conclusion}.
 If you are not a computer science student, you might still find some information in this article useful -- just keep in mind that we make some assumptions that might not apply to you.
 
 There are two things we specifically will not go into:
@@ -93,7 +93,7 @@ Your goal is not to advance research (although that is usually the case) or to p
 At the core of a research problem there is usually a \emph{research question}.
 This research question can have different \emph{interrogative words} that will dictate the direction of your thesis:
 If it starts with \emph{Why} or \emph{What}, you usually want to investigate a certain phenomenon (e.g., \emph{Why is the gcc compiler so slow when I compile the Linux kernel?} or \emph{What is the overhead of compiling the Linux kernel in a virtual environment?}).
-On the other hand, if your question starts with \emph{How}, the focus is more on developing something new (e.g., \emph{How can we decrease the compile time of the Linux kernel?}).
+On the other hand, if your question starts with \emph{How}, the focus is more on developing something new (e.g., \emph{How can we decrease the compilation time of the Linux kernel?}).
 Note that there can be a bit of overlap regardless.
 In our example, before you start developing something new, you should measure what currently does not work, and after you measure something, it can be useful to provide some proposals on what to change to make it more performant.
 
@@ -213,7 +213,7 @@ When you write a systems paper, e.g., your idea is to write a new kind of databa
 For example, for the design of your database system, it does not matter whether it was written in Java or C++ or which classes you have written.
 What matters is its overall design.
 Again, remember that your research question is not an engineering problem.
-One exception is if you require a certain technology for your approach, e.g., you investigate \emph{gcc} and your approach does not extend to other compilers.
+One exception is if you require a certain technology for your approach, e.g., you investigate \texttt{gcc} and your approach does not extend to other compilers.
 
 \paragraph{Do not include \emph{how} you arrived at your solution}
 To find an approach for your research question, you will often start with a simple one and iterate on that to improve it.
@@ -393,7 +393,7 @@ On the other side of the spectrum, \emph{predatory publishers} publish everythin
 Note that some journals and conferences do not work with a publisher directly, making it a bit harder to determine their quality levels.
 In this case, look at \emph{who} publishes with them (more on determining trustworthiness of authors below).
 Another thing you can look at are conference rankings, but this can be a bit hit-and-miss.
-From the other side, anything on Beall's List can safely be disregarded completely.
+From the other side, anything on Beall's List~\cite{beallslist} can safely be disregarded completely.
 
 \paragraph{Are the authors trustworthy?}
 Finally, see if you find the authors trustworthy.
@@ -423,7 +423,7 @@ If you plan to write your master's thesis or want to improve your English writin
 There is no argument against this.
 Spell-checkers exist, they are free to use, they are available on any platform.
 Trust them to do their job correctly, they know the English language better than you do.
-Depending on the platform, we recommend \emph{ltex}~\cite{ltex} and \emph{textidote}~\cite{textidote}, but you may choose a different one based on your preferences.
+Depending on the platform, we recommend \emph{LTeX}~\cite{ltex} and \emph{TeXtidote}~\cite{textidote}, but you may choose a different one based on your preferences.
 
 \paragraph{\textit{Use a spell-checker}}
 We are not sure if you have heard us the first time.
@@ -533,7 +533,33 @@ Keep a consistent visual style, create high quality figures, use colors only whe
 We mainly use the Python package \emph{seaborn}~\cite{seaborn} to create graphs.
 In combination with the data analysis functionality of \emph{pandas}~\cite{pandas}, you can create some great charts and dig deep into your data.
 You can even do this interactively in a \emph{Jupyter} notebook~\cite{jupyter}!
-As a computer science (or related subject) student, you should have all the knowledge you need to learn using those tools.
+As a computer science (or related subject) student, you should have all the knowledge you need to learn to use those tools.
+
+\section{Giving a Research Talk}
+\label{sec:talk}
+
+In addition to your written thesis, you will often also have the opportunity to present your work in a research talk, e.g., to the research group your advisor is part of.
+Such a presentation can help you disseminate your research to a wider audience than would normally read your thesis, i.e., your advisor and examiner.
+
+For every presentation you give, you should have a specific goal in mind and be able to have an answer to the question ``What am I trying to achieve with this talk?'' that goes beyond ``My advisor told me to do it.''
+Fortunately, in the case of presenting your thesis work, the answer is straightforward:
+Your goal should be to collect as much feedback from a wider audience as possible.
+Usually, the thesis presentation happens before your final submission, giving you enough time to act on that feedback.
+
+In your presentation, give a best-effort overview of what you have already done and what you are still planning to do.
+Do not gloss over important details that could provoke interesting comments from your audience!
+You can expect that most attendees have a high level of knowledge about your specific topic, and you should thus spend as much of your presentation as possible on your original research rather than repetitive background information.
+
+We also recommend sticking to the standard university template for presentations, as it is less distracting than a fancy custom one.
+An important part in creating your slide set is having page numbers, so that audience members can make comments about specific slides.
+If you cannot fit everything you did into the presentation, prepare backup slides of other figures and charts you have, which you may use in a discussion session to go into more detail on specific issues and questions.
+Although you should not go into related work in your presentation, as it is mostly unimportant to your audience, make sure to put citations on claims, figures, and images that are not your own.
+
+In general, a great presentation can have great results for your thesis: interesting feedback from the audience and a boost to your grade.
+Do not waste this opportunity, rather show up with enthusiasm and show that you have made an effort to present your interesting research work!
+Anything else could be viewed as a waste of your audience's time, and the people that determine your grade are part of that audience!
+
+You can find more information on giving research talks in a presentation by Jones~\cite{jones-talk}, but keep in mind that the goals of a talk in a technical conference and those in a university setting might be different.
 
 \section{Further Reading}
 \label{sec:resources}
